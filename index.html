@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <div>
         <!-- Logo -->
-        <img src="img/logo.png" alt="Mari Mullen Logo" style="max-height: 200px; width: auto;">
+        <img src="img/logo.png" alt="Mari Mullen Logo" style="max-height: 200px; width: 100%;">
         
         <!-- Navigation Menu -->
         <nav>
@@ -24,20 +27,21 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <div class="hero-container">
-        <div>
-          <h1>Welcome to My Portfolio</h1>
-          <p>
-            Explore the site and get to know more about my journey as a UX designer and educator.
-          </p>
-        </div>
-      </div>
+<!-- Hero Section -->
+<div class="hero-container" id="hero-section">
+  <div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+      Explore the site and get to know more about my journey as a UX designer and educator.
+    </p>
+  </div>
+</div>
 
       <!-- About Section -->
       <section id="about">
         <h2>About Me</h2>
         <p>Hello! I am Mari Mullen, a driven educator and UX designer with strong organizational, instructional, and interpersonal skills. With a proven track record of excellence in teaching, training, instructional design, and education, I bring a user-focused perspective to creating impactful user experiences.</p>
+        <a href="files/M-Mullen-CV.pdf" download="Mari-Mullen-CV.pdf" class="button view-cv">View CV</a>
       </section>
 
       <!-- Experience Section -->
@@ -54,7 +58,7 @@
           <p>
             This portfolio reflects my proficiency in the Georgia PSC Instructional Technology Standards (GaPSC-IT), in the International Society for Technology in Education Standards for Educators (ISTE-E), and my ability to lead students in achieving the ISTE Standards for Students (ISTE-S). While exploring the links, you will see a series of artifacts and reflections documenting the important work I have completed during this program. Each artifact represents mastery of the standard under which it is represented.
           </p>
-          <a href="https://marimullen.weebly.com/">Mari Mullen ITEC Portfolio</a>
+          <a href="https://marimullen.weebly.com/" class="button read-more">Read More</a>
         </div>
 
         <!-- Project 2: UX Design -->
@@ -63,50 +67,51 @@
             <img src="img/design-icon.svg" alt="Informed Web App Thumbnail" style="width: 100%; max-width: 300px; height: auto;">
           </picture>
           <h3> UX Design</h3>
-          <h4><a href="informed.html">Informed, an Expert Responsive Web App</a> </h4>
+          <h4><a href="informed.html">Informed, an Expert Responsive Web App</a></h4>
           <p>
             The development of Informed followed a user-centered design approach, starting with research to understand the needs and pain points of individuals seeking expert advice. I conducted user interviews, crafted personas, and mapped user journeys to inform the design. Prototyping and usability testing were key in refining the interface for an intuitive and responsive experience.
           </p>
-          <a href="https://www.behance.net/gallery/212966609/Informed">Informed Portfolio</a>
+          <a href="https://www.behance.net/gallery/212966609/Informed" class="button read-more">View Project</a>
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
+ <!-- Contact Section -->
+  <section id="contact-section">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit" class="button email-button">Send</button>
+    </form>
+  </section>
+  
+</main>
 
-    <!-- Footer Section -->
-    <footer>
-      <div>
-        <p>Stay Connected:</p>
-        <ul>
-          <li>
-            <a href="mailto:mari.mullen@icloud.com" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-envelope"></i> Email Me
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/mari-mullen" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-linkedin"></i> LinkedIn Profile
-            </a>
-          </li>
-        </ul>
-        <p>&copy; 2024 Mari Mullen. All rights reserved.</p>
-      </div>
-    </footer>
+<!-- Footer Section -->
+<footer>
+  <div>
+    <p>Stay Connected:</p>
+    <ul>
+      <li>
+        <a href="mailto:mari.mullen@icloud.com" class="button email-button">Email</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mari-mullen" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn Profile
+        </a>
+      </li>
+    </ul>
+    <p>&copy; 2024 Mari Mullen. All rights reserved.</p>
+  </div>
+</footer>
+
   </body>
+
 </html>
