@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
 
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
+</head>
 <body>
-  <header role="banner" style="background-color: var(--light-gray);">
+  <header role="banner">
     <div class="container">
-      <a href="index.html">
-        <img src="img/logo.png" alt="Mari Mullen Logo">
-      </a>
-      
       <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="index.html#about" style="color: var(--dark-cool-grey);">About Me</a></li>
-          <li><a href="index.html#experience" style="color: var(--dark-cool-grey);">Experience &amp; Projects</a></li>
-          <li><a href="index.html#contact-section" style="color: var(--dark-cool-grey);">Contact Me</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#experience">Experience &amp; Projects</a></li>
+          <li><a href="index.html#contact-section">Contact Me</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main role="main">
-    <section id="profile-image" style="background-color: var(--frost-grey); text-align: center; padding: 40px;">
-      <img src="img/mari.jpeg" alt="Mari Mullen Profile Image" style="width: 180px; height: 270px; border-radius: 50%; border: 3px solid var(--dark-cool-grey);">
+    <section id="profile-image" class="profile-image-section">
+      <img
+        src="img/mari.jpeg"
+        alt="Mari Mullen Profile Image"
+        class="profile-image"
+      />
     </section>
 
-    <section id="about-skills" style="background-color: var(--soft-grey); padding: 40px;">
-      <div class="container" style="display: flex; gap: 40px; flex-wrap: wrap;">
-        <div class="about-column" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 100%;">
-          <h1 style="color: var(--dark-cool-grey); text-align: center;">All About Me</h1>
-          <p style="color: var(--steel-grey); margin-bottom: 20px;">
-            With 20 years in education and a newly completed UX design program, I bring a unique blend of teaching, instructional design, and user experience expertise to the table. My educational background enhances my empathy, information structuring, and clarity in design.
+    <section id="about-skills" class="about-skills-section">
+      <div class="container about-skills-container">
+        <div class="about-column">
+          <h1>All About Me</h1>
+          <p>
+            With 20 years in education and a newly completed UX design program, I bring a unique blend 
+            of teaching, instructional design, and user experience expertise to the table. My 
+            educational background enhances my empathy, information structuring, and clarity in design.
           </p>
-          <p style="color: var(--steel-grey); margin-bottom: 20px;">
-            Outside of work, I enjoy outdoor adventures with my family and German Shepherd, Kai, in the Pacific Northwest, which inspires my user-focused design solutions.
+          <p>
+            Outside of work, I enjoy outdoor adventures with my family and German Shepherd, Kai, in the 
+            Pacific Northwest, which inspires my user-focused design solutions.
           </p>
-          <a href="files/M-Mullen-Resume.pdf" download="Mari-Mullen-Resume.pdf" class="button view-cv" style="background-color: var(--blue-main); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; transition: background-color 0.3s;">
+          <a href="files/Mari-Mullen-Resume.pdf" class="button view-cv resume-button">
             View Resume
           </a>
         </div>
 
-        <div class="skills-column" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-          <h1 style="color: var(--dark-cool-grey);">Skills &amp; Tools</h1>
-
-          <h3 style="color: var(--dark-cool-grey); margin-top: 20px;">Relevant Skills</h3>
-          <ul style="color: var(--steel-grey); list-style-type: disc; padding-left: 20px;">
-            <li><strong>UX Design:</strong> User Research, Prototyping, Usability Testing</li>
-            <li><strong>UI Design:</strong> Visual Design, Typography</li>
-            <li><strong>Instructional Design:</strong> Curriculum Development, E-Learning</li>
-            <li><strong>Project Management:</strong> Agile Methodologies, Team Leadership</li>
-          </ul>
-
-          <h3 style="color: var(--dark-cool-grey); margin-top: 40px;">Tools I Use</h3>
-          <ul style="color: var(--steel-grey); list-style-type: square; padding-left: 20px;">
-            <li>Figma</li>
-            <li>Canva</li>
-            <li>Miro</li>
-            <li>Adobe XD</li>
-            <li>Sketch</li>
-          </ul>
+        <div class="skills-column">
+          <h2>Skills &amp; Tools</h2>
+          <div class="skills-container">
+            <div class="relevant-skills">
+              <h3>Relevant Skills</h3>
+              <ul>
+                <li><strong>UX Design:</strong> User Research, Prototyping, Usability Testing</li>
+                <li><strong>UI Design:</strong> Visual Design, Typography</li>
+                <li><strong>Instructional Design:</strong> Curriculum Development, E-Learning</li>
+                <li><strong>Project Management:</strong> Agile Methodologies, Team Leadership</li>
+              </ul>
+            </div>
+            <div class="tools-i-use">
+              <h3>Tools I Use</h3>
+              <ul>
+                <li>Figma</li>
+                <li>Canva</li>
+                <li>Miro</li>
+                <li>Adobe XD</li>
+                <li>Sketch</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer role="contentinfo" style="background-color: var(--light-gray);">
-    <div class="container" style="padding: 20px;">
-      <ul style="list-style: none; display: flex; gap: 30px; padding: 0; margin: 10px 0;">
-        <li><a href="mailto:mari.mullen@icloud.com" style="color: var(--dark-cool-grey);"><i class="fas fa-envelope"></i> Email</a></li>
-        <li><a href="https://www.linkedin.com/in/mari-mullen" target="_blank" rel="noopener noreferrer" style="color: var(--dark-cool-grey);"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+  <footer role="contentinfo">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="mailto:mari.mullen@icloud.com">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mari-mullen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
       </ul>
-      <p style="color: var(--steel-grey); text-align: center;">&copy; 2024 Mari Mullen. All rights reserved.</p>
+      <p>&copy; 2024 Mari Mullen. All rights reserved.</p>
     </div>
   </footer>
 </body>

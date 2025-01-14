@@ -1,84 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
 </head>
+
 <body>
   <header role="banner">
     <div class="container">
-      <a href="index.html">
-        <img src="img/logo.png" alt="Mari Mullen Logo">
-      </a>
-
       <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="#about" style="color: var(--dark-cool-grey);">About Me</a></li>
-          <li><a href="#experience" style="color: var(--dark-cool-grey);">Experience &amp; Projects</a></li>
-          <li><a href="#contact-section" style="color: var(--dark-cool-grey);">Contact Me</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="#experience">Experience &amp; Projects</a></li>
+          <li><a href="#contact-section">Contact Me</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <div class="logo-container">
+    <a href="index.html">
+      <img
+        src="img/logo.png"
+        alt="Mari Mullen Logo"
+        class="logo"
+      />
+    </a>
+  </div>
+
   <main role="main">
-    <section id="hero" style="background-color: var(--cool-light-grey);">
-      <div class="container">
-        <h1 style="color: var(--dark-cool-grey);">Welcome to My Portfolio</h1>
-        <p class="subtitle" style="color: var(--steel-grey);">Explore the site to see the fusion of Instructional Design and UX Design.</p>
+    <section id="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="subtitle">
+        Explore the site to see the fusion of Instructional Design and UX Design.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am Mari Mullen, a driven educator and UX designer with strong organizational,
+        instructional, and interpersonal skills. With a proven track record of excellence in
+        teaching, training, instructional design, and education, I bring a user-focused
+        perspective to creating impactful user experiences.
+      </p>
+      <a href="about.html">Click to Learn More</a>
+    </section>
+
+    <section id="experience">
+      <div class="experience-container">
+        <h2>Experience &amp; Projects</h2>
+        
+        <div class="project">
+          <div class="description">
+            <h3>
+              <a href="instructional-design.html">
+                Instructional Design
+              </a>
+            </h3>
+            <p>Education Specialist in Instructional Technology</p>
+          </div>
+        </div>
+        
+        <div class="project">
+          <div class="description">
+            <h3>
+              <a href="ux-design.html">
+                UX Design
+              </a>
+            </h3>
+            <p>Intro to UX Design, UX Immersion, Frontend Development for Designers</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" style="background-color: var(--soft-grey);">
-      <h2 style="color: var(--dark-cool-grey);">About Me</h2>
-      <p>Hello! I am Mari Mullen, a driven educator and UX designer with strong organizational, instructional, and interpersonal skills. With a proven track record of excellence in teaching, training, instructional design, and education, I bring a user-focused perspective to creating impactful user experiences.</p>
-      <a href="about.html" style="color: var(--blue-main); text-decoration: none; font-weight: bold;">Click to Learn More</a>
-    </section>
-
-    <section id="experience" style="background-color: var(--muted-grey);">
-      <h2 style="color: var(--dark-cool-grey);">Experience &amp; Projects</h2>
-      <div class="project">
-        <picture>
-          <img src="img/education-icon.svg" alt="Instructional Design Thumbnail" loading="lazy">
-        </picture>
-        <h3 style="color: var(--slate-grey);"><a href="instructional-design.html" style="color: var(--slate-grey); text-decoration: none;">Instructional Design</a></h3>
-        <p>Education Specialist in Instructional Technology</p>
-      </div>
-      
-      <div class="projects">
-        <picture>
-          <img src="img/design-icon.svg" alt="UX Design Thumbnail" loading="lazy">
-        </picture>
-        <h3 style="color: var(--slate-grey);"><a href="ux-design.html" style="color: var(--slate-grey); text-decoration: none;">UX Design</a></h3>
-        <p>Intro to UX Design, UX Immersion, Frontend Development for Designers</p>
-      </div>
-    </section>
-
-    <section id="contact-section" style="background-color: var(--frost-grey);">
-      <h2 style="color: var(--dark-cool-grey);">Contact Me</h2>
-      <form action="#" method="post" class="contact-form" role="form">
+    <section id="contact-section">
+      <h2>Contact Me</h2>
+      <form
+        action="#"
+        method="post"
+        class="contact-form"
+        role="form"
+      >
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="2">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+        />
+
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required minlength="10"></textarea>
-        <button type="submit" style="background-color: var(--blue-main); color: white;">Send</button>
+        <textarea
+          id="message"
+          name="message"
+          required
+          minlength="10"
+        ></textarea>
+
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
-  <footer role="contentinfo" style="background-color: var(--cool-light-grey);">
+  <footer role="contentinfo">
     <div class="container">
       <ul>
-        <li><a href="mailto:mari.mullen@icloud.com" style="color: var(--dark-cool-grey);"><i class="fas fa-envelope"></i> Email</a></li>
-        <li><a href="https://www.linkedin.com/in/mari-mullen" target="_blank" rel="noopener noreferrer" style="color: var(--dark-cool-grey);"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li>
+          <a href="mailto:mari.mullen@icloud.com">
+            <i class="fas fa-envelope"></i>
+            Email
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mari-mullen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </li>
       </ul>
-      <p style="color: var(--steel-grey);">&copy; 2024 Mari Mullen. All rights reserved.</p>
+      <p>&copy; 2024 Mari Mullen. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="js/scripts.js"></script>
+
 </body>
 </html>
