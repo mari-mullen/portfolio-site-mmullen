@@ -424,12 +424,12 @@ main {
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  text-align: left; /* Keep paragraphs left-aligned */
+  text-align: left;
 }
 
 .about-column h1 {
   margin-bottom: 1rem;
-  text-align: center; /* or left if you prefer */
+  text-align: center; 
 }
 
 .skills-column {
@@ -440,66 +440,54 @@ main {
   text-align: left;
 }
 
-/* Center the "View Resume" button horizontally */
 .resume-button {
   margin: 0 auto;
 }
 
-/* Decrease any default top/bottom margins on headings if needed 
-   so they align with the first paragraph in the About column. */
 .skills-column h2 {
   margin-top: 0;
 }
 .about-skills-container {
-  /* Switch from row layout to column layout */
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-/* Optional: remove any 'align-items: flex-start;' that forced columns side by side */
 .about-column, .skills-column {
-  /* No need for flex: 1 if stacking vertically */
   min-width: 300px;
-  margin: 0 auto; /* center or use text-align: left if you prefer */
+  margin: 0 auto; 
   text-align: left;
 }
 
-/* Ensure the "View Resume" button is centered under the paragraphs */
 .resume-button {
   margin: 0 auto;
 }
-/* The parent .skills-column can remain a simple container with a centered heading */
 .skills-column {
-  text-align: center; /* ensures the h2 is centered */
-  margin-top: 2rem;   /* optional spacing */
+  text-align: center; 
+  margin-top: 2rem;   
 }
 
-/* The container that holds the two sub-columns */
 .skills-container {
   display: flex;
-  flex-wrap: wrap;   /* so it wraps on smaller screens */
-  gap: 20px;         /* spacing between columns */
-  justify-content: center; /* centers columns horizontally */
-  margin-top: 1.5rem;      /* space between the h2 and columns */
-  text-align: left;        /* revert text to left for the lists */
+  flex-wrap: wrap;   
+  gap: 20px;        
+  justify-content: center; 
+  margin-top: 1.5rem;     
+  text-align: left;      
 }
 
-/* Each sub-column */
 .relevant-skills,
 .tools-i-use {
   flex: 1;
-  min-width: 280px; /* sets a min width so they stack below this if needed */
-  max-width: 400px; /* optional maximum for nicer text flow */
+  min-width: 280px; 
+  max-width: 400px; 
 }
 
-/* Center the sub-headings inside each column if you like (or left align) */
 .relevant-skills h3,
 .tools-i-use h3 {
   text-align: left;
   margin-bottom: 0.5rem;
 }
-/* Container for About & Skills columns */
 .about-skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -507,30 +495,26 @@ main {
   align-items: flex-start;
 }
 
-/* About Column */
 .about-column {
   flex: 1;
   min-width: 300px;
 }
 
-/* Skills Column with centered heading */
 .skills-column {
   flex: 1;
   min-width: 300px;
   text-align: center;
 }
 
-/* Container for the two sub-columns: Relevant Skills & Tools I Use */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin-top: 1rem; 
-  text-align: left; /* revert text to left for the lists */
+  text-align: left; 
 }
 
-/* Each sub-column within Skills */
 .relevant-skills,
 .tools-i-use {
   flex: 1;
@@ -538,69 +522,61 @@ main {
   max-width: 400px;
 }
 
-/* Center the resume button under the text in the About column */
 .resume-button {
   margin: 0 auto;
-  display: block; /* ensures the margin auto centers it horizontally */
+  display: block; 
 }
 .skills-container {
   display: flex;
-  flex-wrap: wrap;       /* columns wrap on smaller screens */
-  gap: 20px;             /* spacing between columns */
-  justify-content: space-between; /* pushes columns apart */
+  flex-wrap: wrap;       
+  gap: 20px;            
+  justify-content: space-between; 
   margin-top: 1rem;
-  text-align: left;      /* ensure bullet lists are left-aligned */
-  width: 100%;           /* ensure it spans its parent container */
+  text-align: left;     
+  width: 100%;           
 }
 
-/* Each column will share the horizontal space */
 .relevant-skills,
 .tools-i-use {
   flex: 1;
-  min-width: 250px;      /* ensures they don't shrink too narrow on small screens */
-  max-width: 500px;      /* optional: keeps columns from becoming too wide */
+  min-width: 250px;      
+  max-width: 500px;      
 }
-/* Container for both About and Skills columns */
 .about-skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  align-items: flex-start; /* Align top edges */
+  align-items: flex-start; 
 }
 
-/* About column */
 .about-column {
   flex: 1;
   min-width: 300px;
   text-align: left;
 }
 
-/* Skills column with heading centered */
 .skills-column {
   flex: 1;
   min-width: 300px;
-  text-align: center; /* Center the h2 "Skills & Tools" */
+  text-align: center; 
 }
 
-/* Container for the two sub-columns: .relevant-skills and .tools-i-use */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between; /* Spread them apart: left & right */
+  justify-content: space-between; 
   margin-top: 1rem;
   text-align: left;
 }
 
-/* Each sub-column inside .skills-container */
 .relevant-skills,
 .tools-i-use {
   flex: 1;
-  min-width: 250px;  /* Prevent columns from squishing too much */
-  max-width: 400px;  /* Optional, so columns don't get too wide */
+  min-width: 250px;  
+  max-width: 400px;  
 }
 
-/* Center the resume button in the About column */
 .resume-button {
   display: block;
   margin: 0 auto;
@@ -610,16 +586,15 @@ main {
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start;
-  max-width: 1200px;  /* container limit */
-  margin: 0 auto;     /* center the container on the page */
+  max-width: 1200px;  
+  margin: 0 auto;     
 }
 
 .skills-column {
-  text-align: center;  /* centers the “Skills & Tools” h2 */
-  flex: 1;            /* so it scales on small screens if needed */
+  text-align: center;  
+  flex: 1;            
 }
 
-/* The two columns inside .skills-container */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -632,11 +607,65 @@ main {
 .skills-container > div {
   width: 48%; 
   min-width: 250px;
-  max-width: 500px; /* optional upper limit */
+  max-width: 500px; 
 }
 
-/* Center the resume button if needed */
 .resume-button {
   display: block;
   margin: 0 auto;
+}
+
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 1rem; 
+  right: 1rem;
+  z-index: 999;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #333;
+  transition: 0.4s;
+}
+
+#mainNav {
+  display: none;
+}
+
+#mainNav.active {
+  display: block;
+  position: absolute; 
+  top: 60px; 
+  right: 0; 
+  width: 200px; 
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: right; 
+}
+
+@media screen and (min-width: 641px) {
+  .hamburger {
+    display: none; 
+  }
+
+  #mainNav {
+    display: block; 
+    position: static; 
+    width: auto;
+    background: none;
+    padding: 0;
+    text-align: left;
+  }
+}
+header .container {
+  position: relative; 
+
 }
