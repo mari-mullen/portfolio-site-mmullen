@@ -25,7 +25,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
@@ -40,7 +41,9 @@ img {
 /* ----------------------------------------------------------
    3. Typography
 ---------------------------------------------------------- */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -74,7 +77,8 @@ h3 {
   font-size: 24px;
 }
 
-.quote, .caption {
+.quote,
+.caption {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -289,12 +293,12 @@ main {
   header .container {
     text-align: center;
   }
-  
+
   nav ul {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .project {
     flex-direction: column;
     text-align: center;
@@ -305,7 +309,7 @@ main {
   #hero h1 {
     font-size: 28px;
   }
-  
+
   .contact-form button {
     width: 100%;
   }
@@ -315,12 +319,12 @@ main {
   .contact-form button {
     padding: 15px 30px;
     font-size: 20px;
-}
+  }
 
-/* ----------------------------------------------------------
+  /* ----------------------------------------------------------
    11. Google Fonts Import
 ---------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@400;700&display=swap');
 }
 
 /* Profile Image Section */
@@ -333,7 +337,7 @@ main {
 .profile-image {
   width: 180px;
   height: 270px;
-  object-fit: cover;  
+  object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--dark-cool-grey);
 }
@@ -390,8 +394,8 @@ main {
 
 .skills-column ul {
   color: var(--steel-grey);
-  list-style-type: disc; 
-  margin-left: 20px;      
+  list-style-type: disc;
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -406,12 +410,13 @@ main {
   font-weight: bold;
   transition: background-color 0.3s;
   text-align: center;
-  width: fit-content;  
+  width: fit-content;
 }
 
 .button.view-cv:hover {
   background-color: var(--dark-blue);
 }
+
 .about-skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -429,7 +434,7 @@ main {
 
 .about-column h1 {
   margin-bottom: 1rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .skills-column {
@@ -447,40 +452,43 @@ main {
 .skills-column h2 {
   margin-top: 0;
 }
+
 .about-skills-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.about-column, .skills-column {
+.about-column,
+.skills-column {
   min-width: 300px;
-  margin: 0 auto; 
+  margin: 0 auto;
   text-align: left;
 }
 
 .resume-button {
   margin: 0 auto;
 }
+
 .skills-column {
-  text-align: center; 
-  margin-top: 2rem;   
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .skills-container {
   display: flex;
-  flex-wrap: wrap;   
-  gap: 20px;        
-  justify-content: center; 
-  margin-top: 1.5rem;     
-  text-align: left;      
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1.5rem;
+  text-align: left;
 }
 
 .relevant-skills,
 .tools-i-use {
   flex: 1;
-  min-width: 280px; 
-  max-width: 400px; 
+  min-width: 280px;
+  max-width: 400px;
 }
 
 .relevant-skills h3,
@@ -488,6 +496,7 @@ main {
   text-align: left;
   margin-bottom: 0.5rem;
 }
+
 .about-skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -511,8 +520,8 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 1rem; 
-  text-align: left; 
+  margin-top: 1rem;
+  text-align: left;
 }
 
 .relevant-skills,
@@ -524,29 +533,31 @@ main {
 
 .resume-button {
   margin: 0 auto;
-  display: block; 
+  display: block;
 }
+
 .skills-container {
   display: flex;
-  flex-wrap: wrap;       
-  gap: 20px;            
-  justify-content: space-between; 
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
   margin-top: 1rem;
-  text-align: left;     
-  width: 100%;           
+  text-align: left;
+  width: 100%;
 }
 
 .relevant-skills,
 .tools-i-use {
   flex: 1;
-  min-width: 250px;      
-  max-width: 500px;      
+  min-width: 250px;
+  max-width: 500px;
 }
+
 .about-skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .about-column {
@@ -558,14 +569,14 @@ main {
 .skills-column {
   flex: 1;
   min-width: 300px;
-  text-align: center; 
+  text-align: center;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-top: 1rem;
   text-align: left;
 }
@@ -573,26 +584,27 @@ main {
 .relevant-skills,
 .tools-i-use {
   flex: 1;
-  min-width: 250px;  
-  max-width: 400px;  
+  min-width: 250px;
+  max-width: 400px;
 }
 
 .resume-button {
   display: block;
   margin: 0 auto;
 }
+
 .about-skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start;
-  max-width: 1200px;  
-  margin: 0 auto;     
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .skills-column {
-  text-align: center;  
-  flex: 1;            
+  text-align: center;
+  flex: 1;
 }
 
 .skills-container {
@@ -605,9 +617,9 @@ main {
 }
 
 .skills-container > div {
-  width: 48%; 
+  width: 48%;
   min-width: 250px;
-  max-width: 500px; 
+  max-width: 500px;
 }
 
 .resume-button {
@@ -620,9 +632,8 @@ main {
   background: none;
   border: none;
   cursor: pointer;
-
   position: absolute;
-  top: 1rem; 
+  top: 1rem;
   right: 1rem;
   z-index: 999;
 }
@@ -642,30 +653,30 @@ main {
 
 #mainNav.active {
   display: block;
-  position: absolute; 
-  top: 60px; 
-  right: 0; 
-  width: 200px; 
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
   background-color: #f2f2f2;
   padding: 1rem;
-  text-align: right; 
+  text-align: right;
 }
 
 @media screen and (min-width: 641px) {
   .hamburger {
-    display: none; 
+    display: none;
   }
 
   #mainNav {
-    display: block; 
-    position: static; 
+    display: block;
+    position: static;
     width: auto;
     background: none;
     padding: 0;
     text-align: left;
   }
 }
-header .container {
-  position: relative; 
 
+header .container {
+  position: relative;
 }
